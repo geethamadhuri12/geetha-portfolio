@@ -1,0 +1,14 @@
+.footer {
+  border-top: 1px solid var(--border-glass);
+  padding: 40px 0;
+  position: relative;
+  z-index: 1;
+}
+.footer-inner { text-align: center; }
+.footer-motto {
+  font-family: var(--font-mono);
+  color: var(--accent-cyan);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.footer-copy { font-size: 13px; color: var(--text-faint); }

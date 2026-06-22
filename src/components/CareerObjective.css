@@ -1,0 +1,8 @@
+.career-objective {
+  max-width: 760px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+.career-objective p { margin-bottom: 14px; }
+.career-objective p:last-child { margin-bottom: 0; }
+.career-objective .eyebrow { justify-content: center; }

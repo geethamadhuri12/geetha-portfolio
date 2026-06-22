@@ -1,0 +1,51 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 24px;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 14px var(--accent-cyan);
+  margin-top: 28px;
+  flex-shrink: 0;
+}
+.timeline-line {
+  flex: 1;
+  width: 1.5px;
+  background: linear-gradient(var(--accent-blue), transparent);
+  margin: 4px 0;
+}
+
+.timeline-card {
+  padding: 26px 28px;
+  margin-bottom: 28px;
+}
+.timeline-period {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--accent-cyan);
+  margin-bottom: 10px;
+}
+.timeline-school { font-size: 18px; margin-bottom: 6px; color: var(--text-primary); }
+.timeline-degree { font-size: 14px; margin-bottom: 6px; }
+.timeline-detail { font-size: 13.5px; color: var(--text-faint); font-family: var(--font-mono); }
+
+@media (max-width: 600px) {
+  .timeline-row { grid-template-columns: 24px 1fr; gap: 14px; }
+  .timeline-card { padding: 20px; }
+}
